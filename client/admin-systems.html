@@ -1,0 +1,33 @@
+<!-- client/admin.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <title>Wisteria Admin</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <img src="assets/logo-wisteria-11.png" class="logo" alt="Wisteria Logo">
+  <main>
+    <h1 class="title">Add New System</h1>
+
+    <section>
+     
+      <form id="system-form">
+        <label for="system-name">System Name:</label>
+        <input type="text" id="system-name" required>
+
+        <label for="symptoms">Symptoms (comma-separated):</label>
+        <input type="text" id="symptoms" required>
+
+        <button type="submit">Add System</button>
+      </form>
+      <p id="admin-message"></p>
+    </section>
+  </main>
+  <button class="back-button" onclick="window.location.href='admin.html'">← Back to Admin Panel</button>
+
+  <script src="admin-systems.js" defer></script>
+</body>
+</html>

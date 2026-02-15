@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wisteria</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+
+
+  <!-- fonts -->
+  <style>
+    @font-face {
+      font-family: 'Amalfi Coast';
+      src: url('assets/AmalfiCoast.ttf') format('truetype');
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="assets/logo-wisteria-06.png" alt="Wisteria Logo" class="logo" />
+  </header>
+
+  <main>
+    <h1 class="title">What would you like to soothe?</h1>
+
+<!-- System -->
+    <div class="form-row">
+      <label for="system-select">Choose a body system:</label>
+      <select id="system-select">
+        <option value="placeholder" selected disabled>Choose a system</option>
+
+      </select>
+    </div>
+
+<!-- Symptoms -->
+    <div class="form-row" id="symptom-section" style="display: none;">
+      <p class="symptom-label">Choose your symptoms:</p>
+    <div id="checkbox-container" class="checkbox-list"></div>
+    </div>
+
+<!-- Show herbs -->
+<div id="submit-container" style="display: none;">
+  <button id="submit-button">Find herbs</button>
+  <section id="results-container" style="margin-top: 40px;"></section>
+
+  <!-- loading message  -->
+  
+  <p id="loading-message" style="display: none; font-style: italic; margin-top: 10px;">Searching for herbs...</p>
+
+
+</div>
+
+  </main>
+  <a href="/admin.html" id="admin-link">Admin Panel</a>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

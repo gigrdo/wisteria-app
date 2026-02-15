@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Manage Herbs</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main>
+    <h2>Manage Herbs</h2>
+
+    <form id="herb-form">
+      <label>
+        Herb Name:
+        <input type="text" id="herb-name" required />
+      </label>
+
+      <label>
+        Symptoms (comma separated):
+        <input type="text" id="herb-symptoms" required />
+      </label>
+
+      <label>
+        Usage Instructions:
+        <textarea id="herb-usage" required></textarea>
+      </label>
+
+      <button type="submit">Add Herb 🌿</button>
+    </form>
+
+    <section id="herb-list">
+      <h3>Current Herbs</h3>
+      <ul id="herbs-container"></ul>
+    </section>
+
+    <button onclick="window.location.href='admin.html'">← Back to Admin</button>
+  </main>
+
+  <script src="admin-herbs.js" defer></script>
+</body>
+</html>
