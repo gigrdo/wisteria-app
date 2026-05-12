@@ -1,3 +1,5 @@
+![Wisteria Screenshot](./client/assets/images/thumbs/logo%20wisteria-10.jpg)
+
 # Wisteria
 
 Wisteria is a health-focused web application designed to help users explore herbal support options based on symptoms and body systems.
