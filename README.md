@@ -1,4 +1,4 @@
-![Wisteria Screenshot](./client/assets/images/thumbs/logo%20wisteria-10.jpg)
+![Wisteria Screenshot](./client/assets/logo%20wisteria-10.jpg)
 
 # Wisteria
 
