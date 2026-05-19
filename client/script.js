@@ -60,7 +60,13 @@ submitButton.addEventListener('click', () => {
   loadingMessage.style.display = 'block'; // shows loading message
 
   fetch('/api/herbs')
-    .then(res => res.json())
+    .then(res => {
+      if (!res.ok) {
+        throw new Error('Failed to fetch herbs');
+        }
+
+          return res.json();
+        })
     .then(herbs => {
       // console.log('herb.symptoms in first item:', herbs[0].symptoms); //testing 
       console.log('🔎 herbs response:', herbs); //testing 
