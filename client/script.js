@@ -22,6 +22,9 @@ if (!selected || selected === 'placeholder') return;
   fetch(`/api/systems/${selected}`)
     .then(res => res.json())
     .then(system => {
+
+      console.log(system);
+      
       if (system && system.symptoms && system.symptoms.length > 0) {
         symptomSection.style.display = 'block';
 
