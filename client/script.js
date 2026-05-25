@@ -90,7 +90,11 @@ submitButton.addEventListener('click', () => {
         matchingHerbs.forEach(herb => {
           const div = document.createElement('div');
           div.className = 'herb-card';
+          
+          const herbImage = herb.image || '/assets/images/herbs/placeholder.jpg';
+
           div.innerHTML = `
+            <img class="herb-image" src="${herbImage}" alt="${herb.name}">
             <strong>${herb.name}</strong><br>
             <em>${herb.usage}</em>
           `;

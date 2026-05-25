@@ -138,6 +138,14 @@ input[type="checkbox"] {
   font-family: 'Lato', sans-serif;
 }
 
+.herb-image {
+  width:100%;
+  max-height: 180px;
+  object-fit: contain;
+  border-radius: 12px;
+  margin-bottom: 12px;
+}
+
 #loading-message {
   color: #7a6c8a;
   text-align: center;
